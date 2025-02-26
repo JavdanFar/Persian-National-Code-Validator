@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Code Validation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Libs/neo.all.min.css">
+    <link rel="stylesheet" href="./Libs/neo-ui.input.css">
+    <link rel="stylesheet" href="./Libs/neo-ui.button.css">
+    <link rel="stylesheet" href="./Libs/style.css">
+</head>
+
+<body data-neo-theme="light">
+    <div class="header d-flex justify-content-between align-items-center p-1 p-md-4">
+        <span></span>
+        <h1>National Code Validation</h1>
+        <i class="bi bi-moon-fill" id="changeThemeIcon"></i>
+    </div>
+    <div class="container">
+        <div class="input-box">
+            <div class="row p-1 p-md-4">
+                <div class="col-12 p-3">
+                    <div id="container" class="NovaField" data-state="default">
+                        <label for="username">National Code</label>
+                        <input id="nationalCode" type="text" maxlength="10" id="username"
+                            placeholder="Enter your national code">
+                        <p id="result" class="helper-text">Please enter a valid national code.</p>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6 p-3">
+                    <button id="validationButton" class="button primary bt-round">Check</button>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer d-flex justify-content-center align-items-center">
+        <p>Developed by <a href="https://javdanfar.ir" target="_blank">Faramarz Javdan</a></p>
+    </div>
+
+    <script src="./NationalCodeValidation.js"></script>
+</body>
+
+</html>
